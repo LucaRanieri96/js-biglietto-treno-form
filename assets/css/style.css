@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(186, 210, 244);
+}
+.my_bg_btn {
+    background-color: rgba(233, 205, 120, 0.582);
+}
+.my_bg_btn:hover {
+    background-color: rgb(231, 191, 49);
+}
