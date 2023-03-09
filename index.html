@@ -17,7 +17,7 @@
   <section class="top">
     <div class="container">
       <div class="row text-center">
-        <div class="col">
+        <div class="col my-4">
           <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         </div>
         <div class="card">
@@ -27,7 +27,7 @@
                 <div class="col-4">
                   <h4>Nome e Cognome</h4>
                   <div class="input-group mb-3">
-                    <input id="" type="text" class="form-control" required>
+                    <input id="name" type="text" class="form-control" required>
                   </div>
                 </div>
                 <div class="col-4">
@@ -54,7 +54,7 @@
                   <button id="submit" type="button" class="btn btn-light my_bg_btn">GENERA</button>
                 </div>
                 <div class="col-2">
-                  <button type="button" class="btn btn-dark">ANNULLA</button>
+                  <button id="delete" type="button" class="btn btn-dark">ANNULLA</button>
                 </div>
               </div>
             </div>
@@ -65,16 +65,31 @@
     </div>
   </section>
   <!-- rendo all'utende il biglietto  -->
-  <div class="bottom">
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-12">
+  <section class="bot">
+    <div class="container">
+      <div class="row">
+        <div class="col my-4 text-center">
           <h2>IL TUO BIGLIETTO</h2>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                </div>
+                <div class="col-8">
+                  <h3 class="panel-title">Biglietto del treno</h3>
+                  <div>prezzo del biglietto: <span id="price"></span> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-    <div id="price"></div>
-  </div>
+    </div>
+  </section>
 
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

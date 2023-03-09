@@ -34,8 +34,16 @@ generaBtn.addEventListener("click", function () {
   }
   
   // mostro a schermo il prezzo del biglietto
-  document.getElementById("price").innerHTML =
-    "Il prezzo del biglietto è di " + ticketPrice.toFixed(2) + "€";
+  document.getElementById("price").innerHTML = ticketPrice.toFixed(2) + "€";
   
 });
 
+const deleteBtn = document.getElementById("delete");
+
+deleteBtn.addEventListener("click", function () {
+
+    document.getElementById("age").value = "";
+    document.getElementById("km").value = "";
+    document.getElementById("name").value = "";
+  
+});
