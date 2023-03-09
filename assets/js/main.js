@@ -42,7 +42,7 @@ generaBtn.addEventListener("click", function () {
   const cabin = Math.floor(Math.random() * 30) + 1;
   document.getElementById("n_cabina").innerHTML = cabin;
   // codice cp
-  const code = Math.floor(Math.random() * 10000) + 1;
+  const code = Math.floor(Math.random() * 1000000) + 1;
   document.getElementById("cp_code").innerHTML = code;
 });
 
