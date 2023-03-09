@@ -52,5 +52,9 @@ const deleteBtn = document.getElementById("delete");
 deleteBtn.addEventListener("click", function () {
   document.getElementById("age").value = "";
   document.getElementById("km").value = "";
+  document.getElementById("price").innerHTML = "";
+  document.getElementById("name2").innerHTML = "";
   document.getElementById("name").value = "";
+  document.getElementById("n_cabina").innerHTML = "";
+  document.getElementById("cp_code").innerHTML = "";
 });
