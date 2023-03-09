@@ -12,14 +12,15 @@ const generaBtn = document.getElementById("submit");
 // assegno il comportamento al pulsante "Genera"
 generaBtn.addEventListener("click", function () {
 
+  const name = document.getElementById("name").value;
   const km = document.getElementById("km").value;
   const age = document.getElementById("age").value;
 
   console.log(`km: ${km}, age: ${age}`);
-  
+
   // calcolo il prezzo del biglietto
   let ticketPrice = km * 0.21;
-  
+
   // calcolo e applico gli sconti nelle due casistiche principali
   if (age < 18) {
     const under18Sale = (ticketPrice * 20) / 100;
@@ -32,18 +33,17 @@ generaBtn.addEventListener("click", function () {
     ticketPrice = ticketPrice - over65Sale;
     console.log(`${ticketPrice}€`);
   }
-  
+
   // mostro a schermo il prezzo del biglietto
   document.getElementById("price").innerHTML = ticketPrice.toFixed(2) + "€";
-  
+  document.getElementById("name2").innerHTML = name;
 });
+
 
 const deleteBtn = document.getElementById("delete");
 
 deleteBtn.addEventListener("click", function () {
-
-    document.getElementById("age").value = "";
-    document.getElementById("km").value = "";
-    document.getElementById("name").value = "";
-  
+  document.getElementById("age").value = "";
+  document.getElementById("km").value = "";
+  document.getElementById("name").value = "";
 });
