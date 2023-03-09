@@ -6,10 +6,10 @@ il prezzo del biglietto è definito in base ai km (0.21 € al km)
 va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65. 
 */
-
-// assegno il comportamento al pulsante "Genera"
+// creo una variabile per il pulsante in modo da assegnargli una funzione poi
 const generaBtn = document.getElementById("submit");
 
+// assegno il comportamento al pulsante "Genera"
 generaBtn.addEventListener("click", function () {
 
   const km = document.getElementById("km").value;
@@ -18,7 +18,7 @@ generaBtn.addEventListener("click", function () {
   console.log(`km: ${km}, age: ${age}`);
   
   // calcolo il prezzo del biglietto
-  let ticketPrice = km * 0.21; // prezzo base
+  let ticketPrice = km * 0.21;
   
   // calcolo e applico gli sconti nelle due casistiche principali
   if (age < 18) {
