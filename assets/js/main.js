@@ -36,7 +36,14 @@ generaBtn.addEventListener("click", function () {
 
   // mostro a schermo il prezzo del biglietto
   document.getElementById("price").innerHTML = ticketPrice.toFixed(2) + "€";
+  // mostro il nome
   document.getElementById("name2").innerHTML = name;
+  // numero cabina
+  const cabin = Math.floor(Math.random() * 30) + 1;
+  document.getElementById("n_cabina").innerHTML = cabin;
+  // codice cp
+  const code = Math.floor(Math.random() * 10000) + 1;
+  document.getElementById("cp_code").innerHTML = code;
 });
 
 
